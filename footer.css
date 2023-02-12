@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+}
+
+footer * {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 0;   /*ul*/
+}
+
+a:has(img) {
+    display: block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.logoIntroduction {
+    font-size: 2rem;
+}
+
+.sozialeNetzwerke li {
+    display: inline-block;
+}
+
+.nameMailMatrikel li:first-child {
+    font-weight: 600;
+}
+
+.nameMailMatrikel, a:link {
+    color: gray;
+}
+
+a:hover {
+    color: ghostwhite;
+}
+
+a:active {
+    color: red;
+}
+
