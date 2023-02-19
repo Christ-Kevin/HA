@@ -1,0 +1,30 @@
+.image {
+    display: block;
+max-width: 100%;
+}
+
+.image img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media(min-width: 60em) {
+    .hero {
+        padding-top: 156px;
+    }
+
+    article {
+        flex-direction: row-reverse;
+    }
+
+    article > * {
+        width: 50%;
+    }
+}
