@@ -1,6 +1,6 @@
 .image {
     display: block;
-max-width: 100%;
+    max-width: 100%;
 }
 
 .image img {
@@ -24,7 +24,7 @@ article {
         flex-direction: row-reverse;
     }
 
-    article > * {
+    article>* {
         width: 50%;
     }
 }

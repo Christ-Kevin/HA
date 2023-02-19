@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.title {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.text h2,
+.karte h2 {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.title {
+    display: none;
+}
+
+footer {
+    margin-top: auto;
+}
+
+#map {
+    height: 400px;
+}
+
+@media(min-width: 47em) {
+    .hero {
+        padding-top: 130px;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main>* {
+        flex: 0 40%;
+    }
+
+    .title {
+        display: block;
+    }
+
+    .karte {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

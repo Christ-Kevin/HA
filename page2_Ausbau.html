@@ -10,9 +10,17 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 
-    <title>Web Engineering | Hausarbeit</title>
+    <title>Intransparenter Ausbau von Glasfaaseranschlüssen | Hausarbeit</title>
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="styleQuickhorn.css" />
     <link rel="stylesheet" href="style2.css" />
 </head>
 
@@ -22,10 +30,10 @@
             <a href="https://christ-kevin.github.io/HA/#" class="header__logo logo">
                 <img src="Bilder/icon-home.svg" alt="Skilled e-learning's logo">
             </a>
-            <h1 class="title">Expansion führt zum Ausbruch / Berlin</h1>
+            <h1 class="title">Borkheide: Intransparenter Ausbau von Glasfaaseranschlüssen</h1>
             <a href="#kontakt" class="header__get-started btn byn-yan-blue">Kontaktinformationen</a>
         </div>
-    
+
     </header>
     <main class="hero">
         <article>
@@ -45,17 +53,19 @@
                     <em>Gewerbetreibenden</em>,
                     wie dem örtlichen Hotel, ein Glasfaseranschluss verwehrt, während teilweise <em>unbewohnte
                         Gartenlauben</em> mit Breitbandversorgung vorbereitet wurden. Dadurch wurde am Bedarf der Bürger
-                    vorbei gebaut im Wert von <strong>16.000 Euros</strong>.</p>
+                    vorbei gebaut im Wert von <strong>16.000 Euros</strong>.
+                </p>
             </section>
-            <div class="map">
+            <div class="karte">
                 <div>
-                <h2>Umgebung von Borkheide</h2>
-                <div class="img_desktop"><img src="./Bilder/Intransparenter_Ausbau.png" alt="" /></div>
+                    <h2 class="end">Umgebung von Borkheide</h2>
+                    <div class="img_desktop"><img src="./Bilder/Intransparenter_Ausbau.png" alt="" /></div>
                 </div>
-                <div><h2>Kartenausschnitt von Borkheide</h2>
-                <div></div>
+                <div>
+                    <h2>Kartenausschnitt von Borkheide</h2>
+                    <div></div>
                 </div>
-    </div>
+            </div>
         </article>
     </main>
     <footer class="kontaktinformationen" id="kontakt">
