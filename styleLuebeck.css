@@ -35,9 +35,10 @@ article {
         align-self: center;
     }
 
-.text {
-    margin-bottom: 1.5rem;
-}
+    .text {
+        margin-bottom: 4.7rem;
+    }
+
     .intro {
 
         grid-column: 2/2;
