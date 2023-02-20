@@ -20,6 +20,10 @@ article {
         padding-top: 156px;
     }
 
+    .img_desktop img {
+        width: 364px;
+    }
+
     article {
         flex-direction: row-reverse;
     }
@@ -28,3 +32,5 @@ article {
         width: 50%;
     }
 }
+
+/* in styleBautzen kopieren ? */

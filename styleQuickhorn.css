@@ -28,6 +28,10 @@ main {
     display: none;
 }
 
+.hero>* {
+    flex: 1 50%;
+}
+
 footer {
     margin-top: auto;
 }
@@ -39,15 +43,12 @@ footer {
 @media(min-width: 47em) {
     .hero {
         padding-top: 130px;
-    }
-
-    main {
         flex-direction: row;
         justify-content: center;
     }
 
-    main>* {
-        flex: 0 40%;
+    .hero>* {
+        flex: 1 40%;
     }
 
     .title {

@@ -1,0 +1,61 @@
+.img_desktop img {
+    display: none;
+}
+
+.img_mobile img {
+    max-width: 100%;
+    display: block;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.karte h2 {
+    display: none;
+}
+
+@media(min-width: 37.5em) {
+    .img_mobile {
+        display: none;
+    }
+
+    .img_desktop img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .text {
+        align-self: center;
+        padding-bottom: 1rem;
+    }
+
+    article {
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    article section,
+    article .karte {
+        width: 50%;
+    }
+
+    .karte {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex: 0 50%;
+        padding-bottom: 2rem;
+        max-width: 364px;
+    }
+
+    .karte h2 {
+        display: block;
+        padding-bottom: 1.5rem;
+    }
+}
