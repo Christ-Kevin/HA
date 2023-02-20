@@ -1,0 +1,49 @@
+.image figure {
+    display: block;
+    max-width: 100%;
+}
+
+.image img {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+}
+
+@media(min-width: 60em) {
+    .hero {
+        padding-top: 156px;
+    }
+
+    .img_desktop img {
+        width: 364px;
+    }
+
+    article {
+        flex-direction: row-reverse;
+        padding-bottom: 0;
+        justify-content: space-between;
+    }
+
+    article>* {
+        width: 47%;
+    }
+
+    header {
+        display:block;
+    }     
+        .image img {
+            margin: 0;
+            width: 100%;
+            max-width: 600px;
+        }
+    }
+
+/* in styleBautzen kopieren ? */

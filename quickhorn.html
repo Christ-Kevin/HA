@@ -3,26 +3,26 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="author" content="Christ Watat, " />
+    <meta name="author" content="Christ Watat, Christoph Evensen" />
     <meta name="description"
         content="Sechs Beispiele für Steuerverschwendung in Deutschland aus dem Jahrbuch 2021/2022." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 
-    <title>Quickhorn | Hausarbeit</title>
+    <title>QExpansion führt zum Ausbruch | Quickhorn</title>
 
     <!-- leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-    
+
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
-        <!-- css -->
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="styleQuickhorn.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styleQuickhorn.css" />
 </head>
 
 <body>
@@ -34,14 +34,14 @@
             <h1 class="title">Quickhorn: Expansion führt zum Ausbruch</h1>
             <a href="#kontakt" class="header__get-started btn byn-yan-blue">Kontaktinformationen</a>
         </div>
-    
+
     </header>
     <main class="hero">
         <article class="text">
-            
+
             <section class="seite1">
-                    <h2>Gründung eines IT-Zweckverbands von der Stadt Quickborn und dem Kreis Pinneberg</h2>
-                    <div>
+                <h2>Gründung eines IT-Zweckverbands von der Stadt Quickborn und dem Kreis Pinneberg</h2>
+                <div>
                     <p>Dieser bietet Dienstleistungen für Verwaltungen an.</p>
                     <p>Da sich seit 2017 weitere Kommunen aus Schleswig-Holstein dem Verband anschlossen, war die
                         Serverstruktur im Frühjahr 2021 überlastet.</p>
@@ -58,15 +58,15 @@
         <aside class="karte">
             <h2>Karte der Gegend - Schleswig-Holstein</h2>
             <div id="map">
-                    <script>
-                        var map = L.map('map').setView([54.64163, 8.98162], 13);
+                <script>
+                    var map = L.map('map').setView([54.64163, 8.98162], 13);
 
-                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            maxZoom: 19,
-                            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                        }).addTo(map);
-                        var marker = L.marker([54.64163, 8.98162]).addTo(map);
-                    </script>                  
+                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+                    var marker = L.marker([54.64163, 8.98162]).addTo(map);
+                </script>
             </div>
         </aside>
     </main>

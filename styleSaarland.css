@@ -1,0 +1,25 @@
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+}
+
+article {
+  padding-bottom: 1.5rem;
+}
+
+article div {
+            width: clamp(375px, 100% - 32px, 800px);
+    margin: 0 auto;
+}
+
+@media(min-width: 55em) {
+    article {
+        padding-top: 30px;
+    }
+    
+  img {
+    display: inline;
+    float: right;
+  }
+}

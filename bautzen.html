@@ -3,19 +3,19 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="author" content="Christ Watat, " />
+    <meta name="author" content="Christ Watat, Christoph Evensen" />
     <meta name="description"
         content="Sechs Beispiele für Steuerverschwendung in Deutschland aus dem Jahrbuch 2021/2022." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 
-    <title>Teure Planungsfehler | Bautzen</title> 
+    <title>Teure Planungsfehler | Bautzen</title>
 
     <!-- leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-    
+
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
@@ -34,43 +34,50 @@
             <h1 class="title">Bautzen: Teure Planungsfehler beim Breitbandausbau</h1>
             <a href="#kontakt" class="header__get-started btn byn-yan-blue">Kontaktinformationen</a>
         </div>
-    
+
     </header>
     <main class="hero">
         <article>
             <header>
                 <div class="img_mobile"><img src="./Bilder/Teure_Planungsfehler.png" alt="" /></div>
             </header>
-    
-    <section class="text">  
-    <p>Mit Gesamtvolumen von <strong>105 Millionen Euros</strong> wurde im Landkreis Bautzen eines der größten Breitbandausbauprojekt realisiert.</p>
-    <p>Es kam jedoch zu <strong>erheblichen</strong> Fehlplanungen, da zur Planung <em>veraltetes und ungenaues Kartenmaterial</em> ein.</p>
-    <p>So wurden Acker- und Wiesenflächen als <em>Bedarfsflächen</em> ausgewiesen, während Wohngebiete <strong>lückenhaft</strong> eingebunden wurden.</p>
-    <p>Es gab eine Anbindung an das Breitbandnetz für das Garten- und Wochenendausbaugebiet Ringhain, in dem die Förderfähigkeit nicht gegeben ist.</p>
-    <p>In einem <em>neuen</em> Förderprojekt mit geplanten <strong>83,3 Millionen Euro</strong> sollen Anschlüssen für <em>vergessene</em> oder bisher <em>nicht erfasste</em> Adressen erfolgen.</p>
-    <p>Die Anschlusskosten sind im nachträglichen Projekt mit <em>14.000 Euro pro Adresse</em> deutlich teurer als die durchschnittlichen <em>2.500 Euro Anschlusskosten pro Adresse</em> im ursprunglichen Projekt.</p>
-    </section>
-    <div class="karte">
-    <aside>
-        <h2>Teure Planungsfehler</h2>
-        <div class="img_desktop"><img src="./Bilder/Teure_Planungsfehler.png" alt="" /></div>
-    </aside>
-    <aside>
-        <h2>Kartenauschnitt</h2>
-            <div id="map">
-                <script>
-                    var map = L.map('map').setView([51.182293, 14.423775], 13);
 
-                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        maxZoom: 19,
-                        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                    }).addTo(map);
-                    var marker = L.marker([51.182293], [14.423775]).addTo(map);
-                </script>
-        </div>
-    </aside>
-    </div>
-    </article>
+            <section class="text">
+                <p>Mit Gesamtvolumen von <strong>105 Millionen Euros</strong> wurde im Landkreis Bautzen eines der
+                    größten Breitbandausbauprojekt realisiert.</p>
+                <p>Es kam jedoch zu <strong>erheblichen</strong> Fehlplanungen, da zur Planung <em>veraltetes und
+                        ungenaues Kartenmaterial</em> ein.</p>
+                <p>So wurden Acker- und Wiesenflächen als <em>Bedarfsflächen</em> ausgewiesen, während Wohngebiete
+                    <strong>lückenhaft</strong> eingebunden wurden.</p>
+                <p>Es gab eine Anbindung an das Breitbandnetz für das Garten- und Wochenendausbaugebiet Ringhain, in dem
+                    die Förderfähigkeit nicht gegeben ist.</p>
+                <p>In einem <em>neuen</em> Förderprojekt mit geplanten <strong>83,3 Millionen Euro</strong> sollen
+                    Anschlüssen für <em>vergessene</em> oder bisher <em>nicht erfasste</em> Adressen erfolgen.</p>
+                <p>Die Anschlusskosten sind im nachträglichen Projekt mit <em>14.000 Euro pro Adresse</em> deutlich
+                    teurer als die durchschnittlichen <em>2.500 Euro Anschlusskosten pro Adresse</em> im ursprunglichen
+                    Projekt.</p>
+            </section>
+            <div class="karte">
+                <aside>
+                    <h2>Teure Planungsfehler</h2>
+                    <div class="img_desktop"><img src="./Bilder/Teure_Planungsfehler.png" alt="" /></div>
+                </aside>
+                <aside>
+                    <h2>Kartenauschnitt</h2>
+                    <div id="map">
+                        <script>
+                            var map = L.map('map').setView([51, 18, 14.43], 13);
+
+                            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                maxZoom: 19,
+                                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                            }).addTo(map);
+                            var marker = L.marker([51.18, 14.43]).addTo(map);
+                        </script>
+                    </div>
+                </aside>
+            </div>
+        </article>
     </main>
     <footer class="kontaktinformationen" id="kontakt">
         <div class="footer__container container">
@@ -93,8 +100,9 @@
             </div>
             <div class="sozialeNetzwerke">
                 <ul>
-                    <li><a href="https://www.instagram.com/kevin2370t/" target="_blank" aria-label="instagram account"><svg
-                                width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <li><a href="https://www.instagram.com/kevin2370t/" target="_blank"
+                            aria-label="instagram account"><svg width="20" height="20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path
                                     d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058ZM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0Zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
                                     fill="pink" />
